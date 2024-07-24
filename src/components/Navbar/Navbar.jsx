@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import ChicksLogo from "../assets/chicks-logo.svg?react";
+import ChicksLogo from "../../assets/chicks-logo.svg?react";
+import Button from "../ui/Button";
 
 const leftNavItems = [
   "Currency",
@@ -134,23 +135,13 @@ const Dropdown = styled.li`
   }
 `;
 
-const Button = styled.button`
-  display: flex;
-  align-items: center;
-  padding: 0.5rem 0.75rem;
+const CartButton = styled(Button)`
   background-color: transparent;
-  border: none;
-  color: white;
-  font-size: 0.75rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  cursor: pointer;
 `;
 
-const PrimaryButton = styled(Button)`
+const SignInButton = styled(Button)`
   background-color: #39e29d;
   color: #303141;
-  border-radius: 5px;
 
   & span {
     margin-left: 0.75rem;
@@ -209,18 +200,18 @@ export default function Navbar() {
                 </a>
               </Dropdown>
               <li>
-                <Button>
+                <CartButton>
                   <span className="material-symbols-outlined">
                     shopping_cart
                   </span>
                   Cart
-                </Button>
+                </CartButton>
               </li>
             </Navigation>
-            <PrimaryButton>
+            <SignInButton>
               Sign In
               <span className="material-symbols-outlined">person</span>
-            </PrimaryButton>
+            </SignInButton>
           </FlexContainer>
         </RightContainer>
       </div>
