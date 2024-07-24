@@ -1,8 +1,7 @@
 import styled from "styled-components";
 import ItemsSection from "./components/ItemsSection";
 import ItemsGrid from "./components/ItemsGrid";
-
-//import React from 'react'
+import { useState } from "react";
 
 const Container = styled.div``;
 
@@ -51,7 +50,7 @@ const itemsData = [
   },
 ];
 
-export default function index() {
+export default function Items() {
   return (
     <Container>
       <div>filters</div>
