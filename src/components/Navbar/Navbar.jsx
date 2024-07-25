@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import ChicksLogo from "../../assets/chicks-logo.svg?react";
 import Button from "../ui/Button";
+import MobileMenu from "./MobileMenu";
 
 const leftNavItems = [
   "Currency",
@@ -14,6 +15,10 @@ const leftNavItems = [
 const Container = styled.nav`
   background-color: #303141;
   border-bottom: 1px solid #4c6085;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 9;
 
   & > div {
     padding: 0 1.25rem;
@@ -173,9 +178,10 @@ const BurguerMenuBtn = styled(Button)`
   }
 `;
 
-export default function Navbar() {
+export default function Navbar({ isOpen, toggleOpen }) {
   return (
     <Container>
+      <MobileMenu isOpen={isOpen} />
       <div>
         <LeftContainer>
           <BurguerMenuBtn>
