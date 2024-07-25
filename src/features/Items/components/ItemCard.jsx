@@ -4,7 +4,6 @@ import NumberInput from "../../../components/ui/NumberInput";
 
 const Container = styled.div`
   aspect-ratio: 2/3;
-  //width: 100%;
   flex: 1;
   padding: 1.25rem;
   background-color: #323648;
@@ -90,11 +89,12 @@ const PriceLabel = styled.span`
 
 const ItemDescription = styled.p`
   font-size: 0.75rem;
-  color: white;
+  color: rgba(255, 255, 255, 0.75);
   font-weight: 300;
 `;
 
 const Footer = styled.div`
+  padding-top: 1rem;
   margin-top: auto;
   display: flex;
   justify-content: space-between;
@@ -146,6 +146,16 @@ const ImageContainer = styled.div`
   }
 `;
 
+const GameLabel = styled.div`
+  padding: 0.125rem 0.5rem;
+  border-radius: 1rem;
+  background-color: transparent;
+  border: 2px solid #39e29d;
+  color: #39e29d;
+  font-weight: 800;
+  font-size: 0.75rem;
+`;
+
 export default function ItemCard({ item }) {
   const isOnSale = !!item?.salePrice;
   const stockAvailable = item.stock > 0;
@@ -166,7 +176,7 @@ export default function ItemCard({ item }) {
         </ImageContainer>
         <Title>
           <h4>{item.name}</h4>
-          <div>LOL</div>
+          <GameLabel>LoL</GameLabel>
         </Title>
         <div>
           {isOnSale && (
