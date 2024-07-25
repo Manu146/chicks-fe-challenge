@@ -62,6 +62,8 @@ const Links = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
   & > ul {
     list-style: none;
     & h5 {
