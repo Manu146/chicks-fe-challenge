@@ -5,12 +5,27 @@ const InputContainer = styled.div`
   border-radius: 4px;
   overflow: hidden;
   display: flex;
-  background-color: #373e54;
-  padding: 0 0.5rem 0 0.25rem;
+  flex-direction: column;
+  background-color: transparent;
+  padding: 0;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    background-color: #373e54;
+    padding: 0 0.5rem 0 0.25rem;
+
+    &:hover,
+    &:focus-within {
+      background-color: #46506c;
+      & input {
+        background-color: #46506c;
+      }
+    }
+  }
 `;
 
 const Input = styled.input.attrs({ type: "number" })`
-  background-color: #373e54;
+  background-color: transparent;
   color: white;
   padding: 0.125rem 0.75rem;
   border: none;
@@ -29,24 +44,41 @@ const Input = styled.input.attrs({ type: "number" })`
   &:focus {
     outline: none;
   }
+
+  @media (min-width: 768px) {
+    background-color: #373e54;
+  }
 `;
 
 const BtnsContainer = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  gap: 1.25rem;
+
+  @media (min-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+  }
 `;
 
 const ArrowBtn = styled.button`
-  background-color: transparent;
+  background-color: #2a2ac0;
+  border-radius: 4px;
   border: none;
   color: white;
   cursor: pointer;
+  padding: 0.25rem;
   &:hover {
     color: #39e29d;
   }
 
-  & span {
+  @media (min-width: 768px) {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
   }
 `;
 
