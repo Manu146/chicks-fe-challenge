@@ -181,10 +181,10 @@ const BurguerMenuBtn = styled(Button)`
 export default function Navbar({ isOpen, toggleOpen }) {
   return (
     <Container>
-      <MobileMenu isOpen={isOpen} />
+      <MobileMenu isOpen={isOpen} toggleOpen={toggleOpen} />
       <div>
         <LeftContainer>
-          <BurguerMenuBtn>
+          <BurguerMenuBtn onClick={toggleOpen}>
             <span className="material-symbols-outlined">menu</span>
           </BurguerMenuBtn>
           <Logo>

@@ -28,13 +28,16 @@ const GlobalStyle = createGlobalStyle`
   }
 
 `;
-//import "./App.css";
+
+const toggleOpen = (fn) => fn((prevOpenState) => !prevOpenState);
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false); //Mobile menu state
+
   return (
     <BgImage>
       <GlobalStyle />
-      <Navbar />
+      <Navbar toggleOpen={() => toggleOpen(setIsOpen)} isOpen={isOpen} />
       <MainContainer>
         <h1>Condimentum consectetur</h1>
         <Items></Items>
