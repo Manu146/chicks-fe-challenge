@@ -46,7 +46,7 @@ const itemsData = [
     price: 2700,
     game: "League of Legends",
     stock: 5,
-    img: "/Sunfire_Aegis_item_HD.png",
+    img: "Sunfire_Aegis_item_HD.png",
     description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     type: "Limited",
   },

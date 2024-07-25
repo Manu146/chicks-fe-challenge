@@ -156,7 +156,7 @@ export default function FilterDropdown({ type, opts, setStateFn, value }) {
       <Container $first>
         <FilterLabel>Price</FilterLabel>
         <CosmeticIcon>
-          <img src="/feather.svg" alt="" />
+          <img src="feather.svg" alt="" />
         </CosmeticIcon>
         <span>{`$${value[0]} - $${value[1]}`}</span>
         <PricesContainer>
@@ -180,7 +180,7 @@ export default function FilterDropdown({ type, opts, setStateFn, value }) {
       <Container $second>
         <FilterLabel>Item Type</FilterLabel>
         <CosmeticIcon>
-          <img src="/bag.svg" alt="" />
+          <img src="bag.svg" alt="" />
         </CosmeticIcon>
         <span>{value}</span>
         <ul>
@@ -204,7 +204,7 @@ export default function FilterDropdown({ type, opts, setStateFn, value }) {
       <Container>
         <FilterLabel>Select a game</FilterLabel>
         <CosmeticIcon>
-          <img src="/sword.png" alt="" />
+          <img src="sword.png" alt="" />
         </CosmeticIcon>
         <span>{value}</span>
         <ul>
