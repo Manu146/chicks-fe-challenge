@@ -1,8 +1,13 @@
-# React + Vite
+# FrontEnd Design Challenge - Chicks Gold
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The challenge project was built using ReactJs, Styled-Components and Vite.
 
-Currently, two official plugins are available:
+## Run the App
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To run the app in local, follow these steps:
+
+1. Clone this repository using `git clone https://github.com/Manu146/chicks-fe-challenge.git` or the **Clone repo** button.
+
+2. Navigate to the cloned repo using a terminal (bash, cmd, powershell).
+
+3. Once in the root of the folder, run `npm run dev` to start the project in your computer. You can now open the project via the link provided in the terminal.
