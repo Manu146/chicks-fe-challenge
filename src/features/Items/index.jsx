@@ -107,7 +107,11 @@ export default function Items() {
         />
         <SearchBar searchValue={search} setSearchFn={setSearch} />
         <div>
-          <FilterDropdown type="price" value={[min, max]} />
+          <FilterDropdown
+            type="price"
+            value={[min, max]}
+            setStateFn={[setMin, setMax]}
+          />
           <FilterDropdown
             type="type"
             opts={typeOpts}

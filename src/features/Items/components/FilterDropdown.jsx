@@ -148,6 +148,8 @@ const SortContainer = styled(Container)`
   }
 `;
 
+const handleChangeFn = (e, cb) => cb(e.target.value);
+
 export default function FilterDropdown({ type, opts, setStateFn, value }) {
   if (type === "price")
     return (
@@ -156,11 +158,17 @@ export default function FilterDropdown({ type, opts, setStateFn, value }) {
         <CosmeticIcon>
           <img src="/feather.svg" alt="" />
         </CosmeticIcon>
-        <span>$0-$1500</span>
+        <span>{`$${value[0]} - $${value[1]}`}</span>
         <PricesContainer>
-          <PriceInput />
+          <PriceInput
+            onChange={(e) => handleChangeFn(e, setStateFn[0])}
+            value={value[0]}
+          />
           <span>-</span>
-          <PriceInput />
+          <PriceInput
+            onChange={(e) => handleChangeFn(e, setStateFn[1])}
+            value={value[1]}
+          />
         </PricesContainer>
         <ArrowIcon className="material-symbols-outlined">
           arrow_drop_down
