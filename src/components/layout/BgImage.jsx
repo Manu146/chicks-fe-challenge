@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Image = styled.div`
   height: 100vh;
   width: 100%;
-  background: url("/bg-wallpaper.jpg") no-repeat center;
+  background: url("bg-wallpaper.jpg") no-repeat center;
   background-size: cover;
   background-position: bottom;
 `;

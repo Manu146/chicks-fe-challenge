@@ -133,24 +133,24 @@ export default function Footer() {
     <Container>
       <Header>
         <div>
-          <img src="/cards.png" alt="" />
-          <img src="/btc.png" alt="" />
+          <img src="cards.png" alt="" />
+          <img src="btc.png" alt="" />
           <span>and 50+ more</span>
         </div>
       </Header>
       <Content>
         <Socials>
           <a href="#">
-            <img src="/x.png" alt="" />
+            <img src="x.png" alt="" />
           </a>
           <a href="#">
-            <img src="/facebook.png" alt="" />
+            <img src="facebook.png" alt="" />
           </a>
           <a href="#">
-            <img src="/instagram.png" alt="" />
+            <img src="instagram.png" alt="" />
           </a>
           <a href="#">
-            <img src="/discord.png" alt="" />
+            <img src="discord.png" alt="" />
           </a>
         </Socials>
         <Links>
