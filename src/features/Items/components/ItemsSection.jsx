@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const ItemsSection = styled.div`
-  padding: 1.5rem;
+  padding: 2rem 3rem;
   background-color: #303141;
   border: 2px solid #465677;
 `;
