@@ -39,7 +39,7 @@ const Navigation = styled.ul`
     align-items: center;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     display: flex;
   }
 `;
@@ -49,7 +49,7 @@ const RightContainer = styled.div`
   justify-content: end;
   align-items: center;
   width: 100%;
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     justify-content: space-between;
   }
 `;
@@ -63,7 +63,7 @@ const FlexContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 0;
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     gap: 1rem;
   }
 `;
