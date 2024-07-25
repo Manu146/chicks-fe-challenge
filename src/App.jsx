@@ -1,7 +1,9 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
+import MainContainer from "./components/layout/MainContainer";
+import Items from "./features/Items";
+import BgImage from "./components/layout/BgImage";
+import Footer from "./components/Footer/Footer";
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
@@ -12,11 +14,12 @@ const GlobalStyle = createGlobalStyle`
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
   }
   body{
-    background-color: #454659;
+    background-color: #37384b;
   }
 
 
   .material-symbols-outlined {
+    font-size: 16px;
     font-variation-settings:
     'FILL' 1,
     'wght' 400,
@@ -28,13 +31,16 @@ const GlobalStyle = createGlobalStyle`
 //import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
+    <BgImage>
       <GlobalStyle />
-      <Navbar></Navbar>
-    </>
+      <Navbar />
+      <MainContainer>
+        <h1>Condimentum consectetur</h1>
+        <Items></Items>
+      </MainContainer>
+      <Footer></Footer>
+    </BgImage>
   );
 }
 
