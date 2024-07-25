@@ -13,8 +13,7 @@ const leftNavItems = [
 
 const Container = styled.nav`
   background-color: #303141;
-  border-bottom: 2px solid #4c6085;
-  min-height: 4.5rem;
+  border-bottom: 1px solid #4c6085;
 
   & > div {
     padding: 0 1.25rem;
@@ -70,12 +69,18 @@ const FlexContainer = styled.div`
 `;
 
 const Logo = styled.div`
-  padding: 0 2rem 0 1rem;
-  border-right: 1px solid hsla(0, 0%, 100%, 0.3);
-  margin-right: 1rem;
+  padding: 0.75rem;
+  margin: 0;
+  border: none;
 
   & svg {
     margin-bottom: 12px;
+  }
+
+  @media (min-width: 1200px) {
+    border-right: 1px solid hsla(0, 0%, 100%, 0.3);
+    margin-right: 1rem;
+    padding: 0 2rem 0 1rem;
   }
 `;
 
@@ -98,7 +103,7 @@ const Dropdown = styled.li`
   }
 
   & a {
-    padding: 1.5rem;
+    padding: 1.75rem;
     text-decoration: none;
     font-size: 0.75rem;
     font-weight: 700;
@@ -153,11 +158,17 @@ const SignInButton = styled(Button)`
 `;
 
 const BurguerMenuBtn = styled(Button)`
-  padding: 1.5rem;
+  padding: 1rem;
+  padding-bottom: 12.5px;
   display: block;
   color: #7f828d;
+  background-color: transparent;
 
-  @media (min-width: 1024px) {
+  & span {
+    font-size: 1.5rem;
+  }
+
+  @media (min-width: 1200px) {
     display: none;
   }
 `;
