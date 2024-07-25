@@ -11,3 +11,7 @@ To run the app in local, follow these steps:
 2. Navigate to the cloned repo using a terminal (bash, cmd, powershell).
 
 3. Once in the root of the folder, run `npm run dev` to start the project in your computer. You can now open the project via the link provided in the terminal.
+
+## Live demo
+
+The project is hosted on Github Pages. You can access right here: https://manu146.github.io/chicks-fe-challenge/
