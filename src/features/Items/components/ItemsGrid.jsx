@@ -3,8 +3,13 @@ import ItemCard from "./ItemCard";
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
+
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 1.25rem;
+  }
 `;
 
 export default function ItemsGrid({ items }) {
